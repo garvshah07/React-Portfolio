@@ -3,7 +3,7 @@ import "./header.css";
 const Header = () => {
   return (
     <>
-      <h1> Garv</h1>
+      <h1 className="flex  justify-center text-3xl   font-bold">Hello world!</h1>
     </>
   );
 };
