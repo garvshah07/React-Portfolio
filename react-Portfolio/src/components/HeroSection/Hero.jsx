@@ -10,9 +10,13 @@ const Hero = () => {
           <span className="text-4xl">A FrontEnd Engineer</span>
           <br />
           <div className="flex justify-center items-center gap-2">
-            <button className="border traking-wider focus:border-blue-400 focus:text-blue-400 hover:bg-slate-700 pt-1 pb-1 pl-3 pr-3 h-9 rounded ">
+            <a
+              href="https://drive.google.com/file/d/1aipVpwupTKHAZur1E1Fz6ZXgoXCmFIf_/view?usp=drive_link"
+              target="_blank"
+              className="border traking-wider focus:border-blue-400 focus:text-blue-400 hover:bg-slate-700 pt-1 pb-1 pl-3 pr-3 h-9 rounded "
+            >
               Resume
-            </button>
+            </a>
             <a href="https://github.com/garvshah07" target="_blank">
               <GitHubIcon />
             </a>
