@@ -1,13 +1,27 @@
 import "./App.css";
-import Header from "./components/Header/Header";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Hero from "./components/HeroSection/Hero";
+
+import Layout from "./components/Layout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/home",
+        element: <Hero />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
-    <main className="max-w-7xl m-auto">
-      <Header />
-      <Hero />
-    </main>
+    <>
+      <RouterProvider router={router} />;
+    </>
   );
 }
 
