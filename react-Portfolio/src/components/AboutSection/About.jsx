@@ -31,10 +31,28 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-center  mt-10 md:mt-20 ">
-        <div className="flex md:flex-row items-center justify-center gap-5 m-3 w-full">
-          <div>
-            <h1 className="font-bold text-2xl tracking-wider ">Education</h1>
+      <section className=" flex flex-col  items-center mt-10 md:mt-20 ">
+        <div className="flex justify-center gap-4 items-center w-full h-[50px]">
+          <h1 className="font-bold text-2xl tracking-wider ">Education</h1>
+        </div>
+        <div className="flex  flex-col md:flex-row items-center justify-center gap-5 m-3 w-full">
+          <div className="flex flex-col ">
+            <p className="text-sm md:text-base lg:text-lg xl:text-xl mb-4">
+              I completed my Bachelor's in Computer Applications from Silver Oak
+              University in 2024, actively participating in technical clubs such
+              as the Google Developer Students Club as volunter. Within the
+              Google Developer Students Club, I immersed myself in advanced
+              technology workshops and projects, fostering innovation and
+              collaborative learning.These experiences significantly shaped my
+              ITcareer, equipping me with invaluable skills, a passion for
+              learning, and a profound understanding of the importance of
+              teamwork in achieving excellence in technology and collaborative
+              endeavors.
+            </p>
+          </div>
+
+          <div className=" flex justify-center items-center md:w-full">
+            <img src="./images/sou" alt="Avatar" className="w-full md:w-64" />
           </div>
         </div>
       </section>
