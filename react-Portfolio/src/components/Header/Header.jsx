@@ -11,9 +11,9 @@ const Header = () => {
         </div>
         <div className="flex justify-center items-center text-center gap-3 text-lg">
           <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About Me</Link>
-          <Link to={"/project"}>Project</Link>
-          <Link to={"/contact"}>Contact</Link>
+          <Link to={"about"}>About Me</Link>
+          <Link to={"project"}>Project</Link>
+          <Link to={"contact"}>Contact</Link>
         </div>
       </nav>
     </header>
