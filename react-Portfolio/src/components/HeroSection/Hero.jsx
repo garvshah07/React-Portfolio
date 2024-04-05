@@ -4,13 +4,17 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center mt-10 ">
-      <div className="flex justify-evenly text-center gap-4  items-center  m-3  flex-wrap w-full ">
-        <div className=" flex flex-col justify-center items-start  h-[430px] text-left  gap-3 mt-10  ">
-          <h1 className="text-4xl font-extrabold sm:text-6xl">
+    <section className="mt-24 ">
+      {/*
+       ** Hero Wrapper
+       */}
+
+      <div className="flex items-center justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap ">
+        <div className=" flex flex-col justify-center items-center md:items-start  text-left gap-3 p-4 md:w-[49%]">
+          <h1 className="text-2xl md:text-6xl font-extrabold sm:text-6xl">
             Hi, I'm Garv Shah
           </h1>
-          <span className="text-2xl sm:text-4xl">A FrontEnd Engineer</span>
+          <span className="text-xl md:text-4xl">A FrontEnd Engineer</span>
 
           <div className="flex justify-center items-center gap-2">
             <a
@@ -28,8 +32,8 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="h-[430px] p-4">
-          <img className="h-96" src="/images/dev.svg" alt="developer" />
+        <div className="p-4 md:w-[49%] flex justify-center items-center">
+          <img className="w-96" src="/images/dev.svg" alt="developer" />
         </div>
       </div>
     </section>
