@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex justify-center items-center text-center ">
           <span className="text-lg">{logo}</span>
         </div>
-        <div className="flex justify-center items-center text-center gap-3 text-lg">
+        <div className="flex justify-center items-center text-center gap-4 text-lg">
           <Link to={"/"}>Home</Link>
           <Link to={"about"}>About Me</Link>
           <Link to={"project"}>Project</Link>
