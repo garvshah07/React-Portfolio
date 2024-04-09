@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import "../Header/Header.css";
 
 const Header = () => {
   const menuList = [
@@ -27,25 +26,32 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const linkHandler = () => {
-    setIsOpen(false);
+    setIsOpen(!isOpen);
   };
 
   const logo = "GS";
 
   return (
     <header className="flex justify-center w-full">
-      <nav className="  flex justify-between h-20 cursor-pointer  gap-5  pl-10 pr-10 m-3 shadow-1 w-full  flex-wrap bg-gray-400 rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-700 relative">
+      <nav className="  flex justify-between h-20 cursor-pointer  gap-5  pl-10 pr-10 m-3 shadow-1 w-full  flex-wrap bg-gray-400 rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10  border border-gray-700 relative">
         <div className="flex justify-center items-center text-center ">
           <span className="text-lg">{logo}</span>
         </div>
         <div
           className={`${
-            !isOpen ? "hidden" : "flex flex-col"
-          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full bg-gray-400 md:relative md:top-0 md:bg-transparent rounded-3xl md:w-auto `}
+            !isOpen
+              ? "hidden"
+              : "flex flex-col md:backdrop-filter bg-gray-900 backdrop-blur-lg  border border-gray-700 "
+          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full md:relative md:top-0 md:bg-transparent rounded-3xl md:w-auto`}
         >
-          {menuList.map((list) => {
+          {menuList.map((list, index) => {
             return (
-              <Link onClick={linkHandler} className="p-4" to={list.url}>
+              <Link
+                key={index}
+                onClick={linkHandler}
+                className="p-4"
+                to={list.url}
+              >
                 {list.linkName}
               </Link>
             );
@@ -56,13 +62,13 @@ const Header = () => {
           {!isOpen ? (
             <MenuIcon
               onClick={() => {
-                setIsOpen(true);
+                setIsOpen(!isOpen);
               }}
             ></MenuIcon>
           ) : (
             <CloseIcon
               onClick={() => {
-                setIsOpen(false);
+                setIsOpen(isOpen);
               }}
             />
           )}
