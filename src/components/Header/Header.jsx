@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const variants = {
-    open: { opacity: 1, y: "-100% " },
+    open: { opacity: 1, y: "0% " },
     closed: { opacity: 1, y: 1 },
   };
   const menuList = [
