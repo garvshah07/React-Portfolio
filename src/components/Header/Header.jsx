@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const variants = {
-    open: { opacity: 1, y: "10% " },
-    closed: { opacity: 1, y: 1},
+    open: { opacity: 1, y: "-100% " },
+    closed: { opacity: 1, y: 1 },
   };
   const menuList = [
     {
@@ -38,9 +38,14 @@ const Header = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
+      // initial={{ opacity: 0, scale: 0.5 }}
+      // animate={{ opacity: 1, scale: 1 }}
+      // transition={{ duration: 0.5 }}
+
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      key="modal"
     >
       <header className="flex justify-center w-full">
         <motion.nav
