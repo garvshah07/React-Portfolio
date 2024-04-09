@@ -26,7 +26,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const linkHandler = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(false);
   };
 
   const logo = "GS";
@@ -41,8 +41,8 @@ const Header = () => {
           className={`${
             !isOpen
               ? "hidden"
-              : "flex flex-col md:backdrop-filter bg-gray-900 backdrop-blur-lg  border border-gray-700 "
-          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full md:relative md:top-0 md:bg-transparent rounded-3xl md:w-auto`}
+              : "flex flex-col backdrop-filter bg-gray-900 backdrop-blur-lg  border border-gray-700 "
+          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full md:relative md:top-0  rounded-3xl md:w-auto `}
         >
           {menuList.map((list, index) => {
             return (
@@ -62,13 +62,13 @@ const Header = () => {
           {!isOpen ? (
             <MenuIcon
               onClick={() => {
-                setIsOpen(!isOpen);
+                setIsOpen(true);
               }}
             ></MenuIcon>
           ) : (
             <CloseIcon
               onClick={() => {
-                setIsOpen(isOpen);
+                setIsOpen(false);
               }}
             />
           )}
