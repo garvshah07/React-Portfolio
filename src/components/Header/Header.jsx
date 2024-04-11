@@ -10,7 +10,7 @@ const Header = () => {
       url: "/",
     },
     {
-      linkName: "ABOUT",
+      linkName: "ABOUT ME",
       url: "/about",
     },
     {

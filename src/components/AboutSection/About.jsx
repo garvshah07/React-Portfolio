@@ -38,7 +38,13 @@ const About = () => {
 
       <section className=" flex flex-col items-center mt-10 md:mt-20 ">
         <div className="flex justify-center gap-4 items-center w-full h-16">
-          <h1 className="font-bold text-2xl tracking-wider ">Education</h1>
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            className="font-bold text-2xl tracking-wider "
+          >
+            Education
+          </h1>
         </div>
         <div
           data-aos="fade-right"
@@ -64,7 +70,7 @@ const About = () => {
             <img
               src="./images/logo.webp"
               alt="Avatar"
-              className=" p-4 w-64 md:w-64"
+              className="p-4 w-64 md:w-64"
             />
           </div>
         </div>

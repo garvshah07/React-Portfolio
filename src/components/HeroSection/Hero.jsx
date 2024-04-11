@@ -2,17 +2,12 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import "aos/dist/aos.css";
 AOS.init();
 
 const Hero = () => {
   return (
     <section className="mt-24 ">
-      {/*
-       ** Hero Wrapper
-       */}
-
       <div className="flex items-center justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap ">
         <div
           data-aos="fade-right"
