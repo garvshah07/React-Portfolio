@@ -34,14 +34,22 @@ const Hero = () => {
             <a
               href="https://drive.google.com/file/d/1aipVpwupTKHAZur1E1Fz6ZXgoXCmFIf_/view?usp=drive_link"
               target="_blank"
-              className="border tracking-wider px-4 py-2 rounded-full"
+              className="  hover:text-cyan-500 hover:border-cyan-400 border tracking-wider px-4 py-2 rounded-full"
             >
               Resume
             </a>
-            <a href="https://github.com/garvshah07" target="_blank">
+            <a
+              href="https://github.com/garvshah07"
+              target="_blank"
+              className=" hover:text-cyan-500"
+            >
               <GitHubIcon fontSize="large" />
             </a>
-            <a href="https://www.linkedin.com/in/shahgarv/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/shahgarv/"
+              className=" hover:text-cyan-500"
+              target="_blank"
+            >
               <LinkedInIcon fontSize="large" />
             </a>
           </div>

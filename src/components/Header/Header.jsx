@@ -6,19 +6,19 @@ import CloseIcon from "@mui/icons-material/Close";
 const Header = () => {
   const menuList = [
     {
-      linkName: "Home",
+      linkName: "HOME",
       url: "/",
     },
     {
-      linkName: "About",
+      linkName: "ABOUT",
       url: "/about",
     },
     {
-      linkName: "Project",
+      linkName: "PROJECT",
       url: "/project",
     },
     {
-      linkName: "Contact",
+      linkName: "CONTACT",
       url: "/contact",
     },
   ];
@@ -35,21 +35,24 @@ const Header = () => {
     <header className="flex justify-center w-full">
       <nav className="  flex justify-between h-20 cursor-pointer  gap-5  pl-10 pr-10 m-3 shadow-1 w-full  flex-wrap bg-gray-400 rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10  border border-gray-700 relative">
         <div className="flex justify-center items-center text-center ">
-          <span className="text-lg">{logo}</span>
+          <Link to={"/"}>
+            <span className="text-lg">{logo}</span>
+          </Link>
         </div>
         <div
           className={`${
             !isOpen
               ? "hidden"
-              : "flex flex-col backdrop-filter bg-gray-900 backdrop-blur-lg  border border-gray-700 "
-          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full md:relative md:top-0  rounded-3xl md:w-auto `}
+              : "flex flex-col bg-[#1c2938] border border-[#374151] md:bg-none md:border-none md:border md:border-transparent "
+          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full md:relative md:top-0 z-50 rounded-3xl md:w-auto md:bg-none lg:bg-none 
+          `}
         >
           {menuList.map((list, index) => {
             return (
               <Link
                 key={index}
                 onClick={linkHandler}
-                className="p-4"
+                className="p-4 hover:text-cyan-500 rounded-full"
                 to={list.url}
               >
                 {list.linkName}
@@ -58,7 +61,7 @@ const Header = () => {
           })}
         </div>
 
-        <div className="flex justify-center items-center m-3 gap-4  md:hidden">
+        <div className=" flex justify-center items-center m-3 gap-4  md:hidden">
           {!isOpen ? (
             <MenuIcon
               onClick={() => {
