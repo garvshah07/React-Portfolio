@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="flex items-center  justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap ">
         <div className="max-w-md md:w-[500px] md:h-fit mx-auto bg-black rounded-md overflow-hidden shadow-md p-6">
           <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-          <form>
+          <form action="https://formsubmit.co/garv8890@gmail.com" method="POST">
             <div className="mb-4">
               <label
                 htmlFor="name"
