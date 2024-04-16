@@ -5,8 +5,8 @@ const About = () => {
     <>
       <section className="flex justify-center  mt-10 md:mt-20   ">
         <div
-          data-aos="fade-left"
-          data-aos-duration="3000"
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
           className="flex  flex-col md:flex-row items-center justify-center gap-5 m-3 w-full"
         >
           <div className="md:w-full">
@@ -39,16 +39,16 @@ const About = () => {
       <section className=" flex flex-col items-center mt-10 md:mt-20 ">
         <div className="flex justify-center gap-4 items-center w-full h-16">
           <h1
-            data-aos="fade-right"
-            data-aos-duration="3000"
+            data-aos="zoom-in-up"
+            data-aos-duration="500"
             className="font-bold text-2xl tracking-wider "
           >
             Education
           </h1>
         </div>
         <div
-          data-aos="fade-right"
-          data-aos-duration="3000"
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
           className="flex  flex-col md:flex-row items-center justify-center gap-5 m-3 w-full"
         >
           <div className="flex flex-col ">

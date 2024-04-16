@@ -43,8 +43,8 @@ const Header = () => {
           className={`${
             !isOpen
               ? "hidden"
-              : "flex flex-col bg-[#1c2938] border border-[#374151] md:bg-none md:border-none md:border md:border-transparent "
-          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full md:relative md:top-0 z-50 rounded-3xl md:w-auto md:bg-none lg:bg-none 
+              : "flex  flex-col bg-[#1c2938] border border-[#374151] md:bg-none md:border-none md:border md:border-transparent "
+          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full md:relative md:top-0 z-50 rounded-3xl md:w-auto md:bg-none lg:bg-none  
           `}
         >
           {menuList.map((list, index) => {

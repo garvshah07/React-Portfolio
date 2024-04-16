@@ -31,10 +31,10 @@ const Project = () => {
         {projectList.map((project, index) => {
           return (
             <div
-              data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos="zoom-in-up"
+              data-aos-duration="500"
               key={index}
-              className="flex justify-center flex-col items-center max-w-sm rounded-lg text-center overflow-hidden shadow-lg bg-black"
+              className="flex  justify-center flex-col items-center max-w-sm rounded-lg text-center overflow-hidden shadow-lg bg-black "
             >
               <img
                 src={project.image}
