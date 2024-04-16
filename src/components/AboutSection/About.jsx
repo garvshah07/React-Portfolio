@@ -45,7 +45,7 @@ const About = () => {
         <div className="flex justify-center gap-4 items-center w-full h-16 mb-5">
           <h1 className="font-bold text-2xl tracking-wider ">Skills</h1>
         </div>
-        <div className="flex justify-between text-lg text-justify items-center gap-3  md:text-base lg:text-lg xl:text-xl">
+        <div className="flex flex-wrap justify-between text-lg text-justify items-center gap-3  md:text-base lg:text-lg xl:text-xl">
           {skills.map((sk, index) => {
             return <button key={index}>{sk}</button>;
           })}
