@@ -27,7 +27,7 @@ const Project = () => {
 
   return (
     <section className="flex justify-center w-full">
-      <div className="flex items-center justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap ">
+      <div className="flex items-center justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap -z-50">
         {projectList.map((project, index) => {
           return (
             <div
