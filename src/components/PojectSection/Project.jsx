@@ -31,8 +31,8 @@ const Project = () => {
         {projectList.map((project, index) => {
           return (
             <div
-              data-aos="zoom-in-up"
-              data-aos-duration="500"
+              data-aos="fade-up"
+              data-aos-duration="1000"
               key={index}
               className="flex  justify-center flex-col items-center max-w-sm rounded-lg text-center overflow-hidden shadow-lg bg-black "
             >

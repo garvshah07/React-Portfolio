@@ -5,8 +5,9 @@ const Contact = () => {
     <section className="flex justify-center w-full">
       <div className="flex items-center  justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap -z-50">
         <div
-          data-aos="zoom-in-up"
-          data-aos-duration="500"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
           className="max-w-md md:w-[500px] md:h-fit mx-auto bg-black rounded-md overflow-hidden shadow-md p-6"
         >
           <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
