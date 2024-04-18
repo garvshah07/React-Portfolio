@@ -14,7 +14,11 @@ const About = () => {
   return (
     <>
       <section className="flex justify-center  mt-10 md:mt-20  -z-50">
-        <div className="flex  flex-col md:flex-row items-center justify-center gap-5 m-3 w-full -z-50">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          className="flex  flex-col md:flex-row items-center justify-center gap-5 m-3 w-full -z-50"
+        >
           <div className="md:w-full">
             <img src="./images/avtar" alt="Avatar" className="w-full md:w-64" />
           </div>
@@ -41,7 +45,12 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className=" flex flex-col items-center mt-10 md:mt-20 ">
+
+      <section
+        data-aos="zoom-in-down"
+        data-aos-duration="500"
+        className=" flex flex-col items-center mt-10 md:mt-20 "
+      >
         <div className="flex justify-center gap-4 items-center w-full h-16 mb-5">
           <h1 className="font-bold text-2xl tracking-wider ">Skills</h1>
         </div>
@@ -51,7 +60,11 @@ const About = () => {
           })}
         </div>
       </section>
-      <section className=" flex flex-col items-center mt-10 md:mt-20 ">
+      <section
+        data-aos="zoom-in-down"
+        data-aos-duration="500"
+        className=" flex flex-col items-center mt-10 md:mt-20 "
+      >
         <div className="flex justify-center gap-4 items-center w-full h-16">
           <h1 className="font-bold text-2xl tracking-wider ">Education</h1>
         </div>

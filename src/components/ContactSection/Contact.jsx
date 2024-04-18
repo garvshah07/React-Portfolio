@@ -5,17 +5,17 @@ const Contact = () => {
     <section className="flex justify-center w-full">
       <div className="flex items-center  justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap -z-50">
         <div
-          data-aos="fade-up"
+          data-aos="zoom-in-down"
           data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="1000"
-          className="max-w-md md:w-[500px] md:h-fit mx-auto bg-black rounded-md overflow-hidden shadow-md p-6"
+          data-aos-duration="500"
+          className="max-w-md md:w-[500px] md:h-[600px] mx-auto border border-[#374151] bg-[#1C2938] rounded-md overflow-hidden shadow-md p-6"
         >
           <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
           <form action="https://formsubmit.co/garv8890@gmail.com" method="POST">
             <div className="mb-4">
               <label
                 htmlFor="name"
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-white-700 font-bold mb-2"
               >
                 Name
               </label>
@@ -31,7 +31,7 @@ const Contact = () => {
             <div className="mb-4">
               <label
                 htmlFor="email"
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-white-700 font-bold mb-2"
               >
                 Email Address
               </label>
@@ -47,7 +47,7 @@ const Contact = () => {
             <div className="mb-4">
               <label
                 htmlFor="phone"
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-white-700 font-bold mb-2"
               >
                 Phone Number
               </label>
@@ -63,7 +63,7 @@ const Contact = () => {
             <div className="mb-4">
               <label
                 htmlFor="message"
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-white-700 font-bold mb-2"
               >
                 Message
               </label>
