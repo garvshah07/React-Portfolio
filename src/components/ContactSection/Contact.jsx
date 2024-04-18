@@ -6,7 +6,6 @@ const Contact = () => {
       <div className="flex items-center  justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap -z-50">
         <div
           data-aos="zoom-in-down"
-          data-aos-anchor-placement="bottom-bottom"
           data-aos-duration="500"
           className="max-w-md md:w-[500px] md:h-[600px] mx-auto border border-[#374151] bg-[#1C2938] rounded-md overflow-hidden shadow-md p-6"
         >

@@ -32,7 +32,7 @@ const Header = () => {
   const logo = "GS";
 
   return (
-    <header className="flex justify-center w-full">
+    <header className="flex justify-center w-full relative z-50">
       <nav className="  flex justify-between h-20 cursor-pointer  gap-5  pl-10 pr-10 m-3 shadow-1 w-full  flex-wrap bg-gray-400 rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10  border border-gray-700 relative">
         <div className="flex justify-center items-center text-center ">
           <Link to={"/"}>
@@ -44,7 +44,7 @@ const Header = () => {
             !isOpen
               ? "hidden"
               : "flex  flex-col bg-[#1c2938] border border-[#374151] md:bg-none md:border-none md:border md:border-transparent "
-          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg absolute right-0 top-24 w-full md:relative md:top-0 z-50 rounded-3xl md:w-auto md:bg-none lg:bg-none  
+          } md:flex md:flex-row justify-center items-center text-center gap-4 text-lg fixed right-0 top-24 w-full md:relative md:top-0 index rounded-3xl md:w-auto md:bg-none lg:bg-none  
           `}
         >
           {menuList.map((list, index) => {

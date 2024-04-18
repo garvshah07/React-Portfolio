@@ -7,4 +7,21 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  scroll-behavior: smooth !important;
+}
+
+.index {
+  z-index: 999 !important;
+}
+
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
 }

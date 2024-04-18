@@ -5,7 +5,7 @@ const Project = () => {
   const projectList = [
     {
       name: "Country App",
-      url: "https://garvshah07.github.io/Country-App/",
+      url: "https://www.google.com/",
       image: "./images/country app.png",
       des: "You can search any country by searching thair name on the search box.",
     },
@@ -13,11 +13,11 @@ const Project = () => {
       name: "Note App",
       url: "https://uinote.netlify.app/",
       image: "./images/Note App.png",
-      des: "We build a note app with basic functionality.",
+      des: "We build a note app with basic functionality",
     },
     {
       name: "Calculator App",
-      url: "https://uinote.netlify.app/",
+      url: "https://gcalculator.vercel.app/",
       image: "./images/Calculator App.png",
       des: "Simple and fully functional amazing calculator app.",
     },
@@ -26,15 +26,17 @@ const Project = () => {
   const techStack = ["HTML", "CSS", "JavaScript", "REACT"];
 
   return (
-    <section className="flex justify-center w-full">
-      <div className="flex items-center justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap -z-50">
+    <section className="flex justify-center   ">
+      <div className="flex items-center justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap ">
         {projectList.map((project, index) => {
           return (
             <div
-              data-aos="zoom-in-down"
+              to={project.url}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
               data-aos-duration="500"
               key={index}
-              className="flex  justify-center flex-col items-center max-w-sm rounded-lg text-center overflow-hidden shadow-lg bg-black "
+              className="flex justify-center flex-col items-center max-w-sm rounded-lg text-center overflow-hidden shadow-lg bg-black "
             >
               <img
                 src={project.image}
