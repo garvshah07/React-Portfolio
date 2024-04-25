@@ -5,7 +5,7 @@ const Project = () => {
   const projectList = [
     {
       name: "Country App",
-      url: "https://www.google.com/",
+      url: "https://uicountries.vercel.app/",
       image: "./images/country app.png",
       des: "You can search any country by searching thair name on the search box.",
     },
