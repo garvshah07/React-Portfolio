@@ -16,7 +16,7 @@ const About = () => {
       <section className="flex justify-center  mt-10 md:mt-20  -z-50">
         <div
           data-aos="zoom-in-up"
-          data-aos-duration="500"
+          data-aos-duration="1500"
           className="flex  flex-col md:flex-row items-center justify-center gap-5 m-3 w-full -z-50"
         >
           <div className="md:w-full">
@@ -48,7 +48,7 @@ const About = () => {
 
       <section
         data-aos="zoom-in-down"
-        data-aos-duration="500"
+        data-aos-duration="1500"
         className=" flex flex-col items-center mt-10 md:mt-20 "
       >
         <div className="flex justify-center gap-4 items-center w-full h-16 mb-5">
@@ -62,7 +62,7 @@ const About = () => {
       </section>
       <section
         data-aos="zoom-in-down"
-        data-aos-duration="500"
+        data-aos-duration="1500"
         className=" flex flex-col items-center mt-10 md:mt-20 "
       >
         <div className="flex justify-center gap-4 items-center w-full h-16">

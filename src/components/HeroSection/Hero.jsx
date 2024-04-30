@@ -23,7 +23,7 @@ const Hero = () => {
 
           <div
             data-aos="fade-right"
-            data-aos-duration="500"
+            data-aos-duration="1500"
             className="flex justify-center items-center gap-2"
           >
             <a
@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         <div
           data-aos="fade-left"
-          data-aos-duration="500"
+          data-aos-duration="1500"
           className="p-4 md:w-[49%] flex justify-center items-center"
         >
           <img className="w-96" src="/images/dev.svg" alt="developer" />

@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="flex items-center  justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap -z-50">
         <div
           data-aos="zoom-in-down"
-          data-aos-duration="500"
+          data-aos-duration="1500"
           className="max-w-md md:w-[500px] md:h-[600px] mx-auto border border-[#374151] bg-[#1C2938] rounded-md overflow-hidden shadow-md p-6"
         >
           <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
