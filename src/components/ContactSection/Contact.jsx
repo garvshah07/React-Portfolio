@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <section className="flex justify-center w-full">
-      <div className="flex items-center  justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap -z-50">
+      <div className="flex items-center  justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap">
         <div
           data-aos="zoom-in-down"
           data-aos-duration="1500"
