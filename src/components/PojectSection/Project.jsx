@@ -33,7 +33,7 @@ const Project = () => {
             <div
               to={project.url}
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="2000"
               key={index}
               className="flex justify-center flex-col items-center max-w-sm rounded-lg text-center overflow-hidden shadow-lg bg-black "
             >
