@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="flex items-center justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap ">
         <div
           data-aos="fade-right"
-          data-aos-duration="500"
+          data-aos-duration="1500"
           className=" flex flex-col justify-center items-start md:items-start sm:items-start text-left gap-3 p-4 md:w-[39%]"
         >
           <h1 className="text-4xl md:text-4xl  font-extrabold sm:text-6xl">

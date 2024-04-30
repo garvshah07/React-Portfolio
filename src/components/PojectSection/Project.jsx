@@ -26,13 +26,13 @@ const Project = () => {
   const techStack = ["HTML", "CSS", "JavaScript", "REACT"];
 
   return (
-    <section className="flex justify-center   ">
-      <div className="flex items-center justify-evenly text-center gap-4 m-3 flex-col md:flex-row flex-wrap ">
+    <section className="flex justify-center    ">
+      <div className="flex items-center justify-evenly   text-center gap-4 m-3 flex-col md:flex-row  flex-wrap ">
         {projectList.map((project, index) => {
           return (
             <div
               to={project.url}
-              data-aos="fade-up"
+              data-aos="fade"
               data-aos-anchor-placement="top-center"
               data-aos-duration="1500"
               key={index}
