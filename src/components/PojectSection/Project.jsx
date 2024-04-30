@@ -32,7 +32,10 @@ const Project = () => {
           return (
             <div
               to={project.url}
-            
+              data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="500"
               key={index}
               className="flex justify-center flex-col items-center max-w-sm rounded-lg text-center overflow-hidden shadow-lg bg-black "
             >
