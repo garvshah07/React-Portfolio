@@ -10,7 +10,7 @@ const Contact = () => {
           className="max-w-md md:w-[500px] md:h-[600px] mx-auto border border-[#374151] bg-[#1C2938] rounded-md overflow-hidden shadow-md p-6"
         >
           <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-          <form action="https://formsubmit.co/garv8890@gmail.com" method="POST">
+          <form action="https://formspree.io/f/mbjnwbge" method="POST">
             <div className="mb-4">
               <label
                 htmlFor="name"
