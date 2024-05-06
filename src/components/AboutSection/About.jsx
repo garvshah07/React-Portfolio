@@ -20,7 +20,11 @@ const About = () => {
           className="flex  flex-col md:flex-row items-center justify-center gap-5 m-3 w-full -z-50"
         >
           <div className="md:w-full">
-            <img src="./images/avtar" alt="Avatar" className="w-full md:w-64" />
+            <img
+              src="./images/favicon.ico"
+              alt="Avatar"
+              className="w-full md:w-64"
+            />
           </div>
 
           <div className="flex flex-col">
