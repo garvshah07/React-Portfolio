@@ -22,7 +22,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full border-2 border-gray-300 p-2 rounded-md"
+                className="w-full border-2 text-black border-gray-300 p-2 rounded-md"
                 placeholder="Your Name"
                 required
               />
@@ -38,7 +38,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full border-2 border-gray-300 p-2 rounded-md"
+                className="w-full  text-black border-2 border-gray-300 p-2 rounded-md"
                 placeholder="Your Email"
                 required
               />
@@ -54,7 +54,7 @@ const Contact = () => {
                 type="tel"
                 id="phone"
                 name="phone"
-                className="w-full border-2 border-gray-300 p-2 rounded-md"
+                className="w-full border-2  text-black border-gray-300 p-2 rounded-md"
                 placeholder="Your Phone Number"
                 required
               />
@@ -69,7 +69,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                className="w-full border-2 border-gray-300 p-2 rounded-md"
+                className="w-full border-2  text-black border-gray-300 p-2 rounded-md"
                 placeholder="Your Message"
                 rows="4"
                 required

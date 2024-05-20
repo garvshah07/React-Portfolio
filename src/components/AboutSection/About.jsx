@@ -2,7 +2,8 @@ import React from "react";
 
 const About = () => {
   const skills = [
-    "HTML",
+    "HTML5",
+    "CSS3",
     "JS",
     "REACT",
     "GIT",
@@ -56,11 +57,26 @@ const About = () => {
         className=" flex flex-col items-center mt-10 md:mt-20 "
       >
         <div className="flex justify-center gap-4 items-center w-full h-16 mb-5">
-          <h1 className="font-bold text-2xl tracking-wider ">Skills</h1>
+          <h1
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            className="font-bold text-2xl tracking-wider "
+          >
+            Skills
+          </h1>
         </div>
-        <div className=" p-3 flex flex-wrap justify-between text-lg text-justify items-center gap-3  md:text-base lg:text-lg xl:text-xl">
+        <div className=" p-3 flex flex-wrap  w-full justify-center gap-4 text-lg  items-center  md:text-base lg:text-lg xl:text-xl">
           {skills.map((sk, index) => {
-            return <button key={index}>{sk}</button>;
+            return (
+              <button
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                className="border  p-2 rounded-sm"
+                key={index}
+              >
+                {sk}
+              </button>
+            );
           })}
         </div>
       </section>
